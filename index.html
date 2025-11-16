@@ -86,7 +86,6 @@
   </footer>
 
   <!-- Google Maps JS -->
-  <!-- Replace YOUR_GOOGLE_API_KEY with your actual key -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzT4KzSJv9BXLQUxKJg6gr4N1YzYOCrQo"></script>
   <script>
     function initMap() {
@@ -97,7 +96,6 @@
         center: cincinnati
       });
 
-      // Placeholder property locations
       const locations = [
         { name: "Downtown Cincinnati", lat: 39.1031, lng: -84.5120 },
         { name: "Over-the-Rhine", lat: 39.1106, lng: -84.5197 },
@@ -106,7 +104,6 @@
         { name: "Westwood", lat: 39.1442, lng: -84.6057 }
       ];
 
-      // Add markers
       locations.forEach(loc => {
         const marker = new google.maps.Marker({
           position: { lat: loc.lat, lng: loc.lng },
@@ -124,7 +121,6 @@
       });
     }
 
-    // Initialize map when window loads
     window.onload = initMap;
   </script>
 </body>
